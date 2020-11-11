@@ -1,6 +1,8 @@
 #!/bin/bash
 # Author: n0nuser ~ https://github.com/n0nuser
 
+# Bash Prompt - Add to .bashrc
+# PS1="\[\033[0;31m\]┌──[\[\033[0m\]\t\[\033[0;31m\]]-[\[\033[0m\]\u\[\033[01;33m\]@\[\033[01;96m\]\h\[\033[0;31m\]]-[\[\033[0;32m\]\w\[\033[0;31m\]]\n\[\033[0;31m\]└──╼ \[\033[01;33m\]\$ \[\033[0m\]"
 
 location="/opt" # Location where all the tools are going to be downloaded
 downloads="~/Descargas" # Put here your downloads folder from ~
