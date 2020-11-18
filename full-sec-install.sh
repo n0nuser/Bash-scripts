@@ -5,12 +5,13 @@
 # PS1="\[\033[0;31m\]┌──[\[\033[0m\]\t\[\033[0;31m\]]-[\[\033[0m\]\u\[\033[01;33m\]@\[\033[01;96m\]\h\[\033[0;31m\]]-[\[\033[0;32m\]\w\[\033[0;31m\]]\n\[\033[0;31m\]└──╼ \[\033[01;33m\]\$ \[\033[0m\]"
 
 location="/opt" # Location where all the tools are going to be downloaded
-downloads="~/Descargas" # Put here your downloads folder from ~
+downloads="~/Downloads" # Put here your downloads folder from ~
 
 ## APT-Manager
-rm -rf ~/.bash_aliases && wget https://gist.github.com/n0nuser/34fc14a084436ae89c2b3405ad453f0a/raw/e3f4d4be8bc13bd532b2d396846bf4cdd9885fee/.bash_aliases -O ~/.bash_aliases
+rm -rf ~/.bash_aliases
+wget https://gist.github.com/n0nuser/34fc14a084436ae89c2b3405ad453f0a/raw/e3f4d4be8bc13bd532b2d396846bf4cdd9885fee/.bash_aliases -O ~/.bash_aliases
 source ~/.bash_aliases
-update
+sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt autoremove -y
 ### General
 sudo apt-get install -y git wget python python3 pip pip3
 ### For rsa-tool
