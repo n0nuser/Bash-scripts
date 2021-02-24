@@ -2,9 +2,10 @@
 
 sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y
 
-sudo apt install -y git grub-customizer plymouth net-tools wget python3 gnome-tweak-tool tlp tlp tilix
+sudo apt install -y git grub-customizer plymouth net-tools wget python3 gnome-tweak-tool tlp tlp tilix curl
 
-sudo snap install --classic code
+# My Bash Aliases
+curl https://gist.githubusercontent.com/n0nuser/34fc14a084436ae89c2b3405ad453f0a/raw/e3f4d4be8bc13bd532b2d396846bf4cdd9885fee/.bash_aliases >> .bash_aliases
 
 sudo snap install spotify
 
